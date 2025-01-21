@@ -9,7 +9,7 @@ class PaymentDetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: buildCustomAppBar('Payment Details'),
+        appBar: buildCustomAppBar(title: 'Payment Details'),
         body: const PaymentDetailsViewBody(),
       ),
     );
