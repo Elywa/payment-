@@ -5,6 +5,8 @@ import 'package:payment_app/features/presentation/views/payment_details_view.dar
 import 'package:payment_app/features/presentation/views/widgets/custom_payment_button.dart';
 import 'package:payment_app/features/presentation/views/widgets/custom_row.dart';
 import 'package:payment_app/features/presentation/views/widgets/custom_total_row.dart';
+import 'package:payment_app/features/presentation/views/widgets/payment_methods_bottom_sheet.dart';
+import 'package:payment_app/features/presentation/views/widgets/payment_methods_list_view.dart';
 
 class MyCartViewBody extends StatelessWidget {
   const MyCartViewBody({super.key});
@@ -63,14 +65,19 @@ class MyCartViewBody extends StatelessWidget {
             CustomPaymentButton(
               title: "Complete Payment",
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) {
+                //       return const PaymentDetailsView();
+                //     },
+                //   ),
+                // );
+                showModalBottomSheet(
+                    context: context,
                     builder: (context) {
-                      return const PaymentDetailsView();
-                    },
-                  ),
-                );
+                      return const PaymentMethodsBottomSheet();
+                    });
               },
             ),
             const SizedBox(
