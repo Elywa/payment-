@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:payment_app/core/utils/styles.dart';
@@ -16,8 +15,7 @@ class CardInfoWidget extends StatelessWidget {
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * .1,
         decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(16)),
+            color: Colors.white, borderRadius: BorderRadius.circular(16)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [

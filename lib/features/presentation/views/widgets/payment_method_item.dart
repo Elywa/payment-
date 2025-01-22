@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class PaymentMethodIcon extends StatelessWidget {
-  const PaymentMethodIcon({super.key, this.isActive = false, required this.image});
+  const PaymentMethodIcon(
+      {super.key, this.isActive = false, required this.image});
   final bool isActive;
-  final String image; 
+  final String image;
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
