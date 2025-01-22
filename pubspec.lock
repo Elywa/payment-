@@ -120,6 +120,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "10.8.0"
+<<<<<<< HEAD
   freezed_annotation:
     dependency: transitive
     description:
@@ -128,6 +129,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.4.4"
+=======
+>>>>>>> ad06ec4ce3b6860137b74098bb01c1cc472677eb
   http:
     dependency: transitive
     description:
